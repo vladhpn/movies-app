@@ -1,8 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { Main } from './pages/Main/Main';
 
 function App() {
-  return <h1>HEader</h1>;
+  return (
+    <div className='bg-zinc-800 h-screen'>
+      <Main />
+    </div>
+  );
 }
 
 export default App;
