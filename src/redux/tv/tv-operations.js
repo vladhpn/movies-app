@@ -25,8 +25,6 @@ import {
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
-console.log(apiKey);
-
 export const fetchPopularTvShow = () => async (dispatch) => {
   dispatch(fetchPopuladTvShowRequest());
   try {
