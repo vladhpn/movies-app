@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { apiKey } from '../../api.js';
 import {
   fetchPopuladMoviesRequest,
   fetchPopuladMoviesSuccess,
@@ -24,7 +23,7 @@ import {
   fetchMovieCastError,
 } from './movies-action.js';
 
-// const apiKey = '98e87da0e762537a8cb63c18dd13caee';
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export const fetchPopularMovies = () => async (dispatch) => {
   dispatch(fetchPopuladMoviesRequest());

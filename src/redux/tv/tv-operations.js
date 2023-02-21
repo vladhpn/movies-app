@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { apiKey } from '../../api.js';
 import {
   fetchPopuladTvShowRequest,
   fetchPopuladTvShowSuccess,
@@ -23,6 +22,10 @@ import {
   fetchTvCastSuccess,
   fetchTvCastError,
 } from './tv-action';
+
+const apiKey = process.env.REACT_APP_API_KEY;
+
+console.log(apiKey);
 
 export const fetchPopularTvShow = () => async (dispatch) => {
   dispatch(fetchPopuladTvShowRequest());
