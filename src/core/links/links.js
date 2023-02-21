@@ -2,6 +2,7 @@ export const links = [
   {
     id: 1,
     label: 'Home',
+    to: '/',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -22,6 +23,7 @@ export const links = [
   {
     id: 2,
     label: 'Movies',
+    to: '/movies',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -42,6 +44,7 @@ export const links = [
   {
     id: 3,
     label: 'TV Shows',
+    to: '/tv-shows',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -62,6 +65,7 @@ export const links = [
   {
     id: 4,
     label: 'Library',
+    to: '/library',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
