@@ -33,10 +33,10 @@ const Main = () => {
 
   return (
     <div className='mx-20 pb-10'>
-      <Slider slides={popularMovies} title={'Popular Movies'} />
-      <Slider slides={topMovies} title={'Top Rated Movies'} />
-      <Slider slides={popularTvShow} title={'Popular TV Shows'} />
-      <Slider slides={topTvShow} title={'Top Rated TV Shows'} />
+      <Slider slides={popularMovies} title={'Popular Movies'} path='movies' />
+      <Slider slides={topMovies} title={'Top Rated Movies'} path='movies' />
+      <Slider slides={popularTvShow} title={'Popular TV Shows'} path='tv-shows' />
+      <Slider slides={topTvShow} title={'Top Rated TV Shows'} path='tv-shows' />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { Spinner } from '../../components/Spinner/Spinner';
 
 const MainLayout = () => {
   return (
-    <div className='bg-zinc-800'>
+    <div>
       <Header />
       <Suspense fallback={<Spinner />}>
         <Outlet />

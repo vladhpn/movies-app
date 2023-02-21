@@ -1,9 +1,4 @@
-import { useSelector } from 'react-redux';
-import { movieTrailer } from '../../redux/movies/movies-selector';
-
-export const Trailer = () => {
-  const trailer = useSelector(movieTrailer);
-
+export const Trailer = ({trailer}) => {
   return (
     <>
       <h3 className='text-white font-bold text-2xl mt-8'> Trailer</h3>

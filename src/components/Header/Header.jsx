@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <div className='bg-zinc-900 px-20 py-7 flex items-center justify-between'>
       <h2 className='text-white text-4xl'>
-        Movie<span className='text-purple-500'>APP</span>
+        <a  href='/'>
+          Movie<span className='text-purple-500'>APP</span>
+          </a>
       </h2>
 
       <ul className='flex items-center'>

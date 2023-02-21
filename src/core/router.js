@@ -19,6 +19,15 @@ const MovieDetails = lazy(() =>
   )
 );
 
+const TvShows = lazy(() =>
+  import('../pages/TvShows/TvShows' /* webpackChunkName: "TvShows" */)
+);
+
+const TvShowDetails = lazy(() =>
+  import(
+    '../pages/TvShowDetails/TvShowDetails' /* webpackChunkName: "TvShowDetails" */
+  )
+);
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -30,7 +39,6 @@ export const router = createBrowserRouter([
         path: '/',
         element: (
           <Suspense fallback={<Spinner />}>
-            {' '}
             <Main />
           </Suspense>
         ),
@@ -42,6 +50,14 @@ export const router = createBrowserRouter([
       {
         path: '/movies/:id',
         element: <MovieDetails />,
+      },
+      {
+        path: 'tv-shows',
+        element: <TvShows />,
+      },
+      {
+        path: '/tv-shows/:id',
+        element: <TvShowDetails />,
       },
     ],
   },
